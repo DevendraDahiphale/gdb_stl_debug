@@ -20,6 +20,12 @@ void print_custom(const vector<int> &val)
     cout << "Vector of size:" << val.size() << endl;
 }
 
+int get_val(map<int,int> my_map, int key) {
+    if(my_map.find(key) != my_map.end())
+        return my_map[key];
+    return -1;
+}
+
 template<typename T, typename S>
 void get_value(map<T, S> smap, T key) 
 {
