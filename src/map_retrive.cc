@@ -21,7 +21,7 @@ void print_custom(const vector<int> &val)
 }
 
 template<typename T, typename S>
-void get_value(map<T, S> &smap, T key) 
+void get_value(map<T, S> smap, T key) 
 {
    typedef map<T, S> container;
    std::ostringstream sStream;
@@ -36,4 +36,4 @@ void get_value(map<T, S> &smap, T key)
 }
 
 template void get_value<int,int>(map<int,int>, int);
-template void get_value<int, vector<int>(map<int, vector<int>>, int);
+template void get_value<int, vector<int>>(map<int, vector<int>>, int);
